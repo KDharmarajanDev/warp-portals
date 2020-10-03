@@ -10,6 +10,8 @@ public class PlayerEnterPortalListener implements Listener {
     @EventHandler
     public void onEnterPortal(PlayerPortalEvent event){
         PortalManager.getInstance().teleportPlayer(event.getPlayer());
+        event.setCanCreatePortal(false);
+        event.setCancelled(true);
     }
 
 }

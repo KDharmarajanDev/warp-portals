@@ -1,6 +1,8 @@
 package Mathematician;
 
 
+import Mathematician.commands.MainCommand;
+import Mathematician.listeners.PlayerEnterPortalListener;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -13,6 +15,12 @@ public class WarpPortalsMain extends JavaPlugin {
     @Override
     public void onEnable(){
         instance = this;
+
+        //Listener Registration
+        this.getServer().getPluginManager().registerEvents(new PlayerEnterPortalListener(),this);
+
+        //Commands Registration
+        this.getCommand("warpportal").setExecutor(new MainCommand());
     }
 
     @Override

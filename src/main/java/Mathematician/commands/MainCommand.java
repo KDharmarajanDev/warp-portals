@@ -1,8 +1,6 @@
 package Mathematician.commands;
 
-import Mathematician.commands.subcommands.DeleteWarp;
-import Mathematician.commands.subcommands.ListWarpsCommand;
-import Mathematician.commands.subcommands.SetWarpCommand;
+import Mathematician.commands.subcommands.*;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -22,8 +20,12 @@ public class MainCommand implements CommandExecutor {
                         return new DeleteWarp().onSubCommand(player, args);
                     } else if(args[0].equalsIgnoreCase("listwarps")){
                         return new ListWarpsCommand().onSubCommand(player, args);
+                    } else if(args[0].equalsIgnoreCase("warp")){
+                        return new GoToWarpCommand().onSubCommand(player, args);
                     } else if(args[0].equalsIgnoreCase("createportal")){
-
+                        return new CreatePortalCommand().onSubCommand(player,args);
+                    } else if(args[0].equalsIgnoreCase("setposition")){
+                        return new SetPositionCommand().onSubCommand(player,args);
                     }
                 }
             }
