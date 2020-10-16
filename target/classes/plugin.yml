@@ -6,7 +6,7 @@ api-version: 1.16
 commands:
   warpportal:
     description: Deals with WarpPortals
-    usage: /warpportal <setwarp|delwarp|listwarps|warp|createportal|setposition> <warp name|p1|p2>
+    usage: /warpportal <setwarp| delwarp | listwarps | warp | createportal | setposition | deleteportal> <warp name | p1 | p2>
     permission: warpportal.warpportal
     permission-message: You don't have permissions.
     aliases: wp

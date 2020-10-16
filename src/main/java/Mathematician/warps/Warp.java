@@ -18,4 +18,12 @@ public class Warp {
         this.location = location;
     }
 
+    public String serialize(){
+        return new SerializedLocation(location).serialize();
+    }
+
+    public static Warp deserialize(String input){
+        return new Warp(SerializedLocation.deserialize(input).toLocation());
+    }
+
 }

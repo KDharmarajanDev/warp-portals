@@ -26,6 +26,8 @@ public class MainCommand implements CommandExecutor {
                         return new CreatePortalCommand().onSubCommand(player,args);
                     } else if(args[0].equalsIgnoreCase("setposition")){
                         return new SetPositionCommand().onSubCommand(player,args);
+                    } else if(args[0].equalsIgnoreCase("deleteportal")){
+                        return new DeletePortalCommand().onSubCommand(player,args);
                     }
                 }
             }

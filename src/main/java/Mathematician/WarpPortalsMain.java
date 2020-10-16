@@ -3,6 +3,10 @@ package Mathematician;
 
 import Mathematician.commands.MainCommand;
 import Mathematician.listeners.PlayerEnterPortalListener;
+import Mathematician.portals.PortalManager;
+import Mathematician.warps.WarpManager;
+import com.google.gson.Gson;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -11,6 +15,7 @@ public class WarpPortalsMain extends JavaPlugin {
 
     private final String prefix = ChatColor.BLACK + "[" + ChatColor.RED + "Warp Portals" + ChatColor.BLACK + "]" + ChatColor.DARK_GRAY + " » " + ChatColor.GOLD;
     private static WarpPortalsMain instance;
+    public static final Gson GSON = new Gson();
 
     @Override
     public void onEnable(){
@@ -21,6 +26,9 @@ public class WarpPortalsMain extends JavaPlugin {
 
         //Commands Registration
         this.getCommand("warpportal").setExecutor(new MainCommand());
+
+        // Load from config
+        instantiateWarpAndPortalManagers();
     }
 
     @Override
@@ -36,4 +44,10 @@ public class WarpPortalsMain extends JavaPlugin {
         player.sendMessage(prefix + message);
     }
 
+    public void instantiateWarpAndPortalManagers(){
+        this.saveDefaultConfig();
+        WarpManager.loadInstanceFromFile();
+        PortalManager.loadInstanceFromFile();
+        Bukkit.getLogger().info("There are " + PortalManager.getInstance().getPortals().size() + " portals!");
+    }
 }

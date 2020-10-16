@@ -1,7 +1,5 @@
 package Mathematician.portals;
 
-import Mathematician.WarpPortalsMain;
-import Mathematician.warps.Warp;
 import Mathematician.warps.WarpManager;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
@@ -36,5 +34,21 @@ public class WarpPortal {
 
     public void teleportPlayer(Player player){
         WarpManager.getInstance().teleportToWarp(player,warpName);
+    }
+
+    public Location getFirstCorner(){
+        return oneCorner;
+    }
+
+    public Location getSecondCorner(){
+        return otherCorner;
+    }
+
+    public String serialize(){
+        return new SerializedWarpPortal(this).serialize();
+    }
+
+    public static WarpPortal deserialize(String input){
+        return SerializedWarpPortal.deserialize(input).toWarpPortal();
     }
 }

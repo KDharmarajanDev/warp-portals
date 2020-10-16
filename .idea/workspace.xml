@@ -7,18 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="edeeda34-e096-46fe-bdc7-d581d71432e1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/WarpPortals_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mathematician/commands/subcommands/SetPositionCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mathematician/commands/subcommands/DeletePortalCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mathematician/portals/SerializedWarpPortal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Mathematician/warps/SerializedLocation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/WarpPortals_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/WarpPortals_jar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_6.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WarpPortals.iml" beforeDir="false" afterPath="$PROJECT_DIR$/WarpPortals.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/WarpPortals_jar/WarpPortals.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/WarpPortals_jar/WarpPortals.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/WarpPortalsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/WarpPortalsMain.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/commands/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/commands/MainCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/commands/subcommands/CreatePortalCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/commands/subcommands/CreatePortalCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/commands/subcommands/GoToWarpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/commands/subcommands/GoToWarpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/listeners/PlayerEnterPortalListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/listeners/PlayerEnterPortalListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/portals/PortalManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/portals/PortalManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/portals/WarpPortal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/portals/WarpPortal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/warps/Warp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/warps/Warp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mathematician/warps/WarpManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mathematician/warps/WarpManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/WarpPortalsMain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/WarpPortalsMain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/commands/MainCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/commands/MainCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/commands/subcommands/SetPositionCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/commands/subcommands/SetPositionCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/portals/PortalManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/portals/PortalManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/portals/WarpPortal.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/portals/WarpPortal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/warps/Warp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/warps/Warp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Mathematician/warps/WarpManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Mathematician/warps/WarpManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +64,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Mathematician.warps" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
@@ -78,14 +93,20 @@
       <screen x="0" y="23" width="1792" height="1031" />
     </state>
     <state x="608" y="234" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1601220996635" />
-    <state x="384" y="120" key="SettingsEditor" timestamp="1601235422026">
-      <screen x="0" y="23" width="1792" height="1031" />
+    <state x="634" y="300" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1602807734198">
+      <screen x="0" y="23" width="1792" height="1029" />
     </state>
+    <state x="634" y="300" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.23.1792.1029@0.23.1792.1029" timestamp="1602807734198" />
+    <state x="384" y="120" key="SettingsEditor" timestamp="1602807738349">
+      <screen x="0" y="23" width="1792" height="1029" />
+    </state>
+    <state x="384" y="120" key="SettingsEditor/0.23.1792.1029@0.23.1792.1029" timestamp="1602807738349" />
     <state x="384" y="120" key="SettingsEditor/0.23.1792.1031@0.23.1792.1031" timestamp="1601235422026" />
-    <state x="566" y="371" key="com.intellij.ide.util.TipDialog" timestamp="1601699985125">
-      <screen x="0" y="23" width="1792" height="1031" />
+    <state x="566" y="372" key="com.intellij.ide.util.TipDialog" timestamp="1602812925238">
+      <screen x="0" y="23" width="1792" height="1034" />
     </state>
-    <state x="566" y="371" key="com.intellij.ide.util.TipDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1601699985125" />
+    <state x="566" y="371" key="com.intellij.ide.util.TipDialog/0.23.1792.1031@0.23.1792.1031" timestamp="1602801084218" />
+    <state x="566" y="372" key="com.intellij.ide.util.TipDialog/0.23.1792.1034@0.23.1792.1034" timestamp="1602812925238" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1601226981393">
       <screen x="0" y="23" width="1792" height="1031" />
     </state>
